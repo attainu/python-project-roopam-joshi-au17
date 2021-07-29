@@ -34,8 +34,9 @@ To create your own ParkingLot -
 
 2. Run `python main.py` to run without input test case file. This opens a shell where you can write your commands like -
 
-  ![p1]()
+  ![p1](https://github.com/attainu/python-project-roopam-joshi-au17/blob/dev/Assets/1.jpg?raw=true)
   
+
 
 
 
