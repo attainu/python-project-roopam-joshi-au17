@@ -1,43 +1,42 @@
-Parking Lot
+## ParkingLot
+Design a parking lot using Python
 
-    Design a parking lot using Python
+## Dependencies
 
-Commands
+1. You just need Python. The code is compatible with Python2 as well as Python3. Visit the link https://www.python.org/downloads/ to install Python. 
 
-Setup
+2. install prettytable
 
-To create your own ParkingLot :
+        pip install prettytable
 
-1.Clone the repository
-2.Run python Parking.py on Command Prompt
-Description
+## Description
 
-This repository gives an overview of how we can design a basic parking lot in Python. It creates parking lot with given number of slots.
+This repository gives an overview of how we can design a basic parking lot in Python. It creates parking lot with given number of slots. The cars follow Greedy approach while being parked in the slots.
 
-main.py script defines the following functions
+parking.py script defines the following functions -
 
-create_parking_lot N - Given N number of slots to create a parking lot
-park regdno colour - Parks a vehicle with given registration number and color in the empty slot . If there are no more empty slots available, it display a message "Sorry, Parking lot is full".
-status - Prints the slot number, registration number and color of the parked vehicles in tabular format.
-leave N - Removes vehicle from slot number N
-Running the app
+1. `create_parking_lot n` - Given n number of slots, create a parking lot
+2. `park car_regno car_color` - Parks a vehicle with given registration number and color in the nearest empty slot possible. If there are no more empty slots available, it shows a message "Sorry, parking lot is full".
+3. `status` - Prints the slot number, registration number and color of the parked vehicles.
+4. `leave x` - Removes vehicle from slot number x
+5. There are few query functions to retrieve slot number from registration number of car, get registration numbers of cars with particular color etc.
 
-To run the app, just open the main.py file on a console like Command Prompt.
+main.py can be run through shell or through file containing test cases. An example file `run_test_case.txt` has been provided in repo.
 
-Instructions and commands used by the program are as follows:
 
-To create a parking lot, "create_parking_lot " example : create_parking_lot 6
+Vehicle.py is a separate class where we can define the type of vehicles that can be parked.
 
-To park a vehicle, "park " example : park KA-01-HH-1234 White
+## Setup
 
-To check status of the parking lot "status"
+To create your own ParkingLot - 
 
-To remove a car from a slot, "leave " example : leave 4
+1. Clone the repository
 
-To get cars of a given color, "registration_numbers_for_cars_with_colour " example : registration_numbers_for_cars_with_colour White
+2. Run `python main.py` to run without input test case file. This opens a shell where you can write your commands like -
 
-To get slot number of cars with given color, "slot_numbers_for_cars_with_colour " example : slot_numbers_for_cars_with_colour Black
+  ![p1]()
+  
 
-To search slot number of a car on registration number, "slot_number_for_registration_number " example : slot_number_for_registration_number MH-04-AY-1111
 
-To end the program, "exit"
+
+
